@@ -1,66 +1,53 @@
-# ENECO Playwright
+# ENECO Playwright Automation
 
 ENECO Playwright is a suite of automated tests designed for the ENECO application, focusing on writing and executing test cases efficiently using Playwright.
-
 Project Mainly focuses on:
 
-- Automating test cases of ENECO application
-- Writing test suits
+## Project Focus
+This project primarily focuses on:
+  - Automating test cases for the ENECO application
+  - Writing efficient and maintainable test 
 
 ## Table of Contents
 
-- [ENECO Playwright](#eneco-playwright)
-  - [Table of Contents](#table-of-contents)
+- [ENECO Playwright Automation](#eneco-playwright-automation)
+  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
     - [Clone repo](#clone-repo)
-  - [Playwright](#playwright)
-    - [Basic usage](#basic-usage)
     - [Build](#build)
     - [Env setup](#env-setup)
   - [Project Convention](#project-convention)
   - [Documentation](#documentation)
   - [Execution Setup](#execution-setup)
   -[Logger Setup](#logger-setup)
+
+ ## Prerequisites
  
+Before setting up this project, ensure you have the following installed:
+
+- **Node.js**: [Download Node.js](https://nodejs.org/en/download/prebuilt-installer)
+- **An IDE** (e.g., Visual Studio): [Visual Studio IDE](https://visualstudio.microsoft.com/)
+- **TypeScript**
+- **Playwright**
+
 ## Installation
-
-### Visual Studio Code
-- **Visual Studio** [Download VS IDE](https://code.visualstudio.com/)
-
-
 
 ### Clone repo
 
-```bash
-# Clone the repo
-git clone https://github.com/Ravivish1185/Qa-Engineering-Challenge-ui.git
+Clone this repository to your local machine:
 
-# Install dependencies
+```bash
+git clone https://github.com/Ravivish1185/Qa-Engineering-Challenge-ui.git
+```
+### Install dependencies
+
 $ npm init playwright@latest
+
 ![Alt text](guide-playwright-install-image.png)
 
 $ npm i winston-daily-rotate-file
+
 $ npm i monocart-reporter
-
-# Install the browsers to run the tests with playwright
-$ npx playwright install
-```
-
-## Playwright
-
-This project was begun with [Playwright](https://playwright.dev/docs/intro)
-
-### Basic usage
-
-```bash
-# Run test cases
- npm run test
-
-# Run test cases in UI mode
- npm run play
-```
-
-Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
 
 ### Build
 
@@ -91,6 +78,7 @@ ENECO_UI_AUTOMATION_PW
 - [Playwright](https://playwright.dev)
 
 - **Typescript**
+  - [Typescript](https://www.typescriptlang.org/docs/)
   - This consists of tsconfig.json file with configuration for the typescript compiler.
 
 ## Execution Setup 
