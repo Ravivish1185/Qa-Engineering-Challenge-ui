@@ -1,0 +1,35 @@
+{
+    "AlleenStroom":{
+        "enecoPostalCode": "9713RD",
+        "enecoHouseNo": "63",
+        "enecofullAddressMessage": "Irislaan 63, 9713RD GRONINGEN",
+        "enecoPowerGrid": "4000",
+        "enecoPhonenumber": "0612345678",
+        "enecoEmailAddress": "my@email.nl",
+        "enecoBankDetails": "NL12 BANK 0123 4567 89",
+        "enecoSuccessMessage": "Bedankt voor je bestelling",
+        "enecoCaluatorHeaderText": "Welk type energie wil je in je berekening?"
+    },
+    "StroomGas":{
+        "enecoPostalCode": "9713RD",
+        "enecoHouseNo": "63",
+        "enecofullAddressMessage": "Irislaan 63, 9713RD GRONINGEN",
+        "enecoPowerGrid": "4000",
+        "enecoPhonenumber": "0612345678",
+        "enecoEmailAddress": "my@email.nl",
+        "enecoBankDetails": "NL12 BANK 0123 4567 89",
+        "enecoSuccessMessage": "Bedankt voor je bestelling",
+        "enecoCaluatorHeaderText": "Welk type energie wil je in je berekening?"
+    },
+    "AlleenGas":{
+        "enecoPostalCode": "9713RD",
+        "enecoHouseNo": "63",
+        "enecofullAddressMessage": "Irislaan 63, 9713RD GRONINGEN",
+        "enecoPowerGrid": "4000",
+        "enecoPhonenumber": "0612345678",
+        "enecoEmailAddress": "my@email.nl",
+        "enecoBankDetails": "NL12 BANK 0123 4567 89",
+        "enecoSuccessMessage": "Bedankt voor je bestelling",
+        "enecoCaluatorHeaderText": "Welk type energie wil je in je berekening?"
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "eneco_ui_automation_pw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "lz-utils": "^2.1.0",
+    "monocart-reporter": "^1.7.13",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
