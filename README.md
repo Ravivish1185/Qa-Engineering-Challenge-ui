@@ -14,8 +14,8 @@ This project primarily focuses on:
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
     - [Clone repo](#clone-repo)
+    -  [Env setup](#env-setup)
     - [Build](#build)
-    - [Env setup](#env-setup)
   - [Project Convention](#project-convention)
   - [Documentation](#documentation)
   - [Execution Setup](#execution-setup)
@@ -49,15 +49,14 @@ $ npm i winston-daily-rotate-file
 
 $ npm i monocart-reporter
 
-### Build
-
-Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
-
 ### Env setup
 
 Create new file `.env` based on `.env.example` file. Update values for `.env` before running the project. 
 To execute in `ENECO` set ENECO_BASE_URL and credentials for eneco website in `.env`
 
+### Build
+
+Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
 
 ## Project Convention
 
