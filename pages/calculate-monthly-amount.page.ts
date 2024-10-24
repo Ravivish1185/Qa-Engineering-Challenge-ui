@@ -28,8 +28,7 @@ export class CalculateMonthlyAmount {
         readonly btn_accpetnce: Locator = page.getByRole('button', { name: 'Accepteren' }),
         readonly tb_postalCode: Locator = page.getByPlaceholder('AB'),
         readonly tb_houseNO: Locator = page.getByPlaceholder('0'),
-        readonly txt_allAddressMessage: Locator = page.locator("//div[@class='sparky-box _11sxdp20 v4tt7h0 j0ixj10 j0ixj1yr qnmajz0']/span/font/font"),
-        readonly txt_allAddressMessage1: Locator = page.getByText('Irislaan 63, 9713RD GRONINGEN'),
+        readonly txt_allAddressMessage: Locator = page.getByText('Irislaan 63, 9713RD GRONINGEN'),
         readonly txt_calculatorPageHeader: Locator = page.getByText("Welk type energie wil je in je berekening?"),
         readonly btn_calculateMonthlyAmount: Locator = page.getByRole('button', { name: 'Bereken je maandbedrag' }),
         readonly btn_next: Locator = page.getByRole('button', { name: 'Volgende' }),
@@ -69,7 +68,7 @@ export class CalculateMonthlyAmount {
             await this.tb_postalCode.fill(postalCode);
             await this.tb_houseNO.fill(houseNo);
             await this.txt_allAddressMessage1.waitFor({state: 'visible'});
-            await this.commonObject.assertMessage(this.txt_allAddressMessage1,fullAddressMessage);
+            await this.commonObject.assertMessage(this.txt_allAddressMessage,fullAddressMessage);
             await this.btn_calculateMonthlyAmount.click();
             logger.info("Successfully Navigated to the Calculate Amount Form");
         }catch(error){
@@ -197,44 +196,3 @@ export class CalculateMonthlyAmount {
     }
 
 }
-// await page.getByRole('button', { name: 'Accepteren' }).click();
-// await page.getByPlaceholder('AB').click();
-// await page.getByPlaceholder('AB').fill('9713RD');
-// await page.getByPlaceholder('0').click();
-// await page.getByPlaceholder('0').fill('63');
-// await page.getByText('Irislaan 63, 9713RD GRONINGEN').click();
-// await page.getByRole('button', { name: 'Bereken je maandbedrag' }).click();
-// await page.getByLabel('Stroom & gas').click();
-// await page.getByLabel('Alleen gas').click();
-// await page.getByLabel('Alleen stroom').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Ja, ik vul mijn verbruik zelf').click();
-// await page.getByLabel('Nee, help mij inschatten').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('persoon').click();
-// await page.getByLabel('2 personen').click();
-// await page.getByLabel('3 personen').click();
-// await page.getByLabel('4 personen').click();
-// await page.getByLabel('of meer').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Appartement').click();
-// await page.getByLabel('Tussenwoning').click();
-// await page.getByLabel('Hoekwoning').click();
-// await page.getByLabel('onder 1 kap').click();
-// await page.getByLabel('Vrijstaand').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Voor').click();
-// await page.getByLabel('Tussen 1945 en').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Ja, ik heb een slimme meter').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Ja, ik wek zelf stroom op').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByPlaceholder('1234').fill('34455');
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Nee, ik ga niet verhuizen').click();
-// await page.getByRole('button', { name: 'Volgende' }).click();
-// await page.getByLabel('Dynamisch').click();
-// await page.getByLabel('Vast').click();
-// await page.getByRole('heading', { name: 'Kies je type energiecontract' }).click();
