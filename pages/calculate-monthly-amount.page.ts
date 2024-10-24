@@ -67,7 +67,7 @@ export class CalculateMonthlyAmount {
         try{
             await this.tb_postalCode.fill(postalCode);
             await this.tb_houseNO.fill(houseNo);
-            await this.txt_allAddressMessage1.waitFor({state: 'visible'});
+            await this.txt_allAddressMessage.waitFor({state: 'visible'});
             await this.commonObject.assertMessage(this.txt_allAddressMessage,fullAddressMessage);
             await this.btn_calculateMonthlyAmount.click();
             logger.info("Successfully Navigated to the Calculate Amount Form");
